@@ -61,7 +61,7 @@ git clone https://github.com/seoeunnn/web_project.git
 ### 2. Docker로 MySQL 실행
 
 ```bash
-docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=coco --name mysql-coco mysql:8
+docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=coco -e MYSQL_USER=coco -e MYSQL_PASSWORD=1234 --name mysql-coco mysql:8
 ```
 
 ### 3. Spring Boot 
