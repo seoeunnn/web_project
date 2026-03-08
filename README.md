@@ -32,54 +32,54 @@ https://github.com/hojunnnnn/board
 
 <br>
 
-# 2. 기술 스택
+## 2. 기술 스택
 
-## Backend
+### Backend
 - Java
 - Spring Boot
 - Spring Security
 - JPA
 
-## Database
+### Database
 - MySQL (Docker)
 
-## Tools
+### Tools
 - Burp Suite
 - DBeaver
 - Git / GitHub
 
 <br>
 
-# 3. 프로젝트 설치 및 실행 방법
+## 3. 프로젝트 설치 및 실행 방법
 
-## 1. 저장소 클론
+### 1. 저장소 클론
 
 ```bash
 git clone https://github.com/seoeunnn/web_project.git
 ```
 
-## 2. Docker로 MySQL 실행
+### 2. Docker로 MySQL 실행
 
 ```bash
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -e MYSQL_DATABASE=coco --name mysql-coco mysql:8
 ```
 
-## 3. Spring Boot 
+### 3. Spring Boot 
 
 ```bash
 ./gradlew bootRun 
 ```
 또는 IDE(IntelliJ)에서 Spring Boot 애플리케이션 실행
 
-## 4. 서비스 접속
+### 4. 서비스 접속
 Burp Suite 프록시 사용을 위해 기본 포트(8080)가 사용되므로
-Spring Boot 서버는 8081 포트에서 실행하도록 설정하였다.
+Spring Boot 서버는 8081 포트에서 실행하도록 설정했습니다.
 
 http://localhost:8081
 
 <br>
 
-# 4. 프로젝트 구조
+## 4. 프로젝트 구조
 ```text
 src
 ├─ main
@@ -127,7 +127,7 @@ src
 
 <br>
 
-# 5. 분석 대상 기능
+## 5. 분석 대상 기능
 본 프로젝트에서는 다음과 같은 기능을 중심으로 취약점 분석을 진행합니다.
 
 - 회원가입
@@ -138,16 +138,18 @@ src
 
 <br>
 
-# 6. 분석 예정 취약점
-본 프로젝트에서는 다음과 같은 **웹 취약점(Web Vulnerabilities)**을 중심으로 분석을 진행할 예정입니다.
-- SQL Injection
-- CSRF (Cross Site Request Forgery)
-- Cross Site Scripting (XSS)
-- IDOR (Insecure Direct Object Reference)
+## 6. 분석 예정 취약점
+
+본 프로젝트에서는 다음과 같은 **웹 취약점**을 중심으로 분석을 진행할 예정입니다.
+
+- **SQL Injection**
+- **CSRF (Cross Site Request Forgery)**
+- **Cross Site Scripting (XSS)**
+- **IDOR (Insecure Direct Object Reference)**
 
 <br>
 
-# 7. 프로젝트 진행 계획
+## 7. 프로젝트 진행 계획
 1. 프로젝트 환경 구축
 2. HTTP 요청 분석 (Burp Suite)
 3. 서비스 구조 및 코드 분석
